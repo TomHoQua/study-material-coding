@@ -2,7 +2,7 @@ function quickSort(unsortedArray){
   //"checks" if the array is sorted and stops the loop + returns the sorted array
   // basically "it will keep splitting the left and right and the pivot and it will push them into arrays based on the conditions"
   // once the array has 0 or 1 > [] or [number] then return the array
-	if(unsortedArray.length <= 1){
+if(unsortedArray.length <= 1){
   	return unsortedArray;
   }
 	// important, otherwise i wont get the sorted arrray and it will keep on going
@@ -10,7 +10,7 @@ function quickSort(unsortedArray){
 
   // splitting into arrays if number is bigger or smaller than the pivot
 	let smaller = []; //smaller numbers than the pivot
-  let bigger = [];  //bigger numbers than the pivot
+  	let bigger = [];  //bigger numbers than the pivot
 	const pivot = unsortedArray[0]; // we can choose any pivot and move the numbers around the pivot
   
   for(i = 1; i < unsortedArray.length; i++){ //just a classic loop, minus the first pivot array, so we start at 1
