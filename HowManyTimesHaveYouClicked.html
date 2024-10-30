@@ -1,0 +1,55 @@
+<html>
+<head>
+<style>
+  body{
+    background-color:lightcyan;
+    margin:0;
+    padding:0;
+  }
+  .custom{
+
+    margin:10px;
+    border:none;
+    box-shadow: 2px 2px gray;
+    background-color: rgb(29, 161, 242, 0.5);
+    border-radius: 10px;
+    padding: 10px;
+    font-style:sans-serif; 
+    color:white;
+    
+  }
+  .custom:hover{
+    background-color: rgb(29, 161, 242);
+  }
+  .container{
+    margin: auto;
+    margin-top:10px;
+    background-color: lightblue;
+    height: 300px;
+    width: 500px;
+    
+  }
+
+</style>
+  <title> test </title>
+  
+</head>
+<body>
+  <div class="container">
+    <button type="button" class= "custom" id="clickMe"> click me!</button>
+    <label for="button" class="counting" id="labelcount">hello</label>
+  </div>
+
+
+</body>
+<script>
+	const counting = document.getElementById("labelcount");
+  const clickMe = document.getElementById("clickMe");
+  	
+  let count = 0;
+  clickMe.addEventListener('click',()=>{
+  	count++
+    counting.textContent = `you've clicked the button ${count} times`
+  })
+</script>
+</html>
